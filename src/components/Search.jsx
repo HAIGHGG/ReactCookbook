@@ -11,7 +11,7 @@ function Search() {
 
 const submitHandler = (e) => {
     e.preventDefault()
-    navigate('searched/' + input)
+    navigate('ReactCookbook/searched/' + input)
 }
 
 	return (
