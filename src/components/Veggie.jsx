@@ -23,7 +23,6 @@ function Veggie() {
 			const data = await api.json()
 			localStorage.setItem('veggie', JSON.stringify(data.recipes))
 			setVeggie(data.recipes)
-			console.log('siema')
 		}
 	}
 
@@ -42,7 +41,7 @@ function Veggie() {
 						return (
 							<SplideSlide key={recipe.id}>
 								<Card>
-								<Link to={'/recipe/' + recipe.id}>
+								<Link to={'ReactCookbook/recipe/' + recipe.id}>
 									<p>{recipe.title}</p>
 									<img src={recipe.image} alt={recipe.title} />
 									<Gradient />

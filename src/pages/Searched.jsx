@@ -25,7 +25,7 @@ function Searched() {
 		<Grid>
 			{searchedRecipes.map(item => {
 				return (
-					<Link to={'/recipe/' + item.id}>
+					<Link to={'ReactCookbook/recipe/' + item.id}>
 						<Card id={item.id}>
 							<img src={item.image} alt={item.title} />
 							<h4>{item.title}</h4>
