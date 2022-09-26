@@ -11,10 +11,10 @@ function Pages() {
 	return (
 		<AnimatePresence mode='wait'>
 			<Routes location={location} key={location.pathname}>
-				<Route path='/' element={<Home />} />
-				<Route path='/cuisine/:type' element={<Cuisine />} />
-				<Route path='/searched/:search' element={<Searched />} />
-				<Route path='/recipe/:name' element={<Recipe />} />
+				<Route path='ReactCookbook/' element={<Home />} />
+				<Route path='ReactCookbook/cuisine/:type' element={<Cuisine />} />
+				<Route path='ReactCookbook/searched/:search' element={<Searched />} />
+				<Route path='ReactCookbook/recipe/:name' element={<Recipe />} />
 			</Routes>
 		</AnimatePresence>
 	)

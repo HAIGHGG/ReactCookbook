@@ -10,7 +10,7 @@ function App() {
 	return (
 		<div className='App'>
 			<BrowserRouter>
-				<Nav to={'/'}>
+				<Nav to={'/ReactCookbook'}>
 					<GiKnifeFork />
 					<Logo>delicious</Logo>
 				</Nav>
