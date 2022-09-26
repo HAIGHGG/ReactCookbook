@@ -25,7 +25,7 @@ function Searched() {
 		<Grid>
 			{searchedRecipes.map(item => {
 				return (
-					<Link to={'ReactCookbook/recipe/' + item.id}>
+					<Link to={'/ReactCookbook/recipe/' + item.id}>
 						<Card id={item.id}>
 							<img src={item.image} alt={item.title} />
 							<h4>{item.title}</h4>
@@ -43,9 +43,9 @@ const Grid = styled.div`
 	grid-gap: 3rem;
 `
 const Card = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	img {
 		width: 100%;
 		max-width: 400px;

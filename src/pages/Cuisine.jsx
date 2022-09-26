@@ -23,7 +23,7 @@ function Cuisine() {
 		<Grid animate={{ opacity: 1 }} initial={{ opacity: 0 }} exit={{ opacity: 0 }} transition={{ duration: 0.5 }}>
 			{cuisine.map(item => {
 				return (
-					<Link to={'ReactCookbook/recipe/' + item.id}>
+					<Link to={'/ReactCookbook/recipe/' + item.id}>
 						<Card key={item.id}>
 							<img src={item.image} alt={item.title} />
 							<h4>{item.title}</h4>
@@ -44,14 +44,12 @@ const Card = styled.div`
 	img {
 		width: 100%;
 		border-radius: 2rem;
-
 	}
 
 	h4 {
 		text-align: center;
 		padding: 1rem;
 		text-decoration: none;
-
 	}
 `
 
